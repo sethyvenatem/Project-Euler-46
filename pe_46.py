@@ -1,5 +1,7 @@
 import math
 #This provides acces to sqrt
+import time
+start_time = time.time()
 
 def P(n):
 # This function makes a list of prime numbers smaller than n. I modified an algorithm taken from https://www.geeksforgeeks.org/python-program-to-print-all-prime-numbers-in-an-interval/
@@ -27,3 +29,5 @@ for k in range(1,max,1):
 			break
 if k<max:
 	print(2*k+1)
+
+print("--- %s seconds ---" % (time.time() - start_time)))
